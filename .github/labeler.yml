@@ -1,0 +1,5 @@
+label1:
+    - example-dir/**/*
+
+label2:
+    - other-dir/**/*
