@@ -1,13 +1,15 @@
-on: [push]
+on: [pull_request]
 
 jobs:
   hello_world_job:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - uses: sjeohp/rust-docker-action@v1.0.14
+      - uses: sjeohp/rust-docker-action@v1.0.15
         with:
+          repo: ${{ env.GITHUB_REPOSITORY }}
           repo-token: ${{ secrets.GITHUB_TOKEN }}
+          
       #      with:
       #  who-to-greet: 'Mona the Octocat'
     # Use the output from the `hello` step
