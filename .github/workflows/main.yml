@@ -7,7 +7,7 @@ jobs:
     steps:
       - uses: sjeohp/rust-docker-action@v1.0.15
         with:
-          repo: ${{ env.GITHUB_REPOSITORY }}
+          repo: $GITHUB_REPOSITORY
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           
       #      with:
