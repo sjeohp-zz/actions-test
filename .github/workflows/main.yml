@@ -8,8 +8,8 @@ jobs:
     - name: rust docker action test
       id: hello
       uses: sjeohp/rust-docker-action@v1.0.14
-        - with:
-            repo-token: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
       #      with:
       #  who-to-greet: 'Mona the Octocat'
     # Use the output from the `hello` step
