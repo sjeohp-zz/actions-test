@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-      - uses: sjeohp/rust-docker-action@v1.0.24
+      - uses: sjeohp/rust-docker-action@v1.0.25
         with:
           repo: ${{ github.repository }}
           repo-token: ${{ secrets.GITHUB_TOKEN }}
